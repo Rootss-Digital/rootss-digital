@@ -1003,6 +1003,22 @@ textarea { min-height: 140px; resize: vertical; }
 }
 .pricing-card .btn { width: 100%; justify-content: center; }
 
+/* ── Discovery call featured card ── */
+.discovery-card-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .discovery-card-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
 /* ── Session cards (one-time services) ── */
 .sessions-grid {
   display: grid;
