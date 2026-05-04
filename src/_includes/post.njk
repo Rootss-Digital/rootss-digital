@@ -1,0 +1,55 @@
+﻿---
+layout: base.njk
+---
+<article class="blog-post-page" itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="author" content="Sandra Pablo">
+  <meta itemprop="publisher" content="Rootss Digital">
+
+  <header class="post-hero">
+    <div class="container container-narrow">
+      <div class="post-meta">
+        <time itemprop="datePublished" datetime="{{ date | htmlDateString }}">
+          <span class="lang-en">{{ date | readableDate }}</span>
+          <span class="lang-es" hidden>{{ date | readableDateEs }}</span>
+        </time>
+        {% if tags %}
+        <div class="post-tags" aria-label="Post categories">
+          {% for tag in tags %}
+            {% if tag != "posts" %}
+            <span class="tag">{{ tag }}</span>
+            {% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      <h1 itemprop="headline">{{ title }}</h1>
+      {% if description %}
+      <p class="post-excerpt" itemprop="description">{{ description }}</p>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="post-body container container-narrow" itemprop="articleBody">
+    {{ content | safe }}
+  </div>
+
+  <aside class="post-cta-banner">
+    <div class="container container-narrow">
+      <p class="lang-en">Is your business showing up on Google? Let's find out together - free.</p>
+      <p class="lang-es" hidden>¿Tu negocio aparece en Google? Averigüémoslo juntos - gratis.</p>
+      <a href="/book/" class="btn btn-primary">
+        <span class="lang-en">Book Your Free Call</span>
+        <span class="lang-es" hidden>Reserva Tu Llamada Gratis</span>
+      </a>
+    </div>
+  </aside>
+
+  <nav class="post-nav" aria-label="Blog navigation">
+    <div class="container container-narrow">
+      <a href="/blog/" class="post-nav-back">
+        <span class="lang-en">&larr; Back to Blog</span>
+        <span class="lang-es" hidden>&larr; Volver al Blog</span>
+      </a>
+    </div>
+  </nav>
+</article>

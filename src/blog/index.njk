@@ -1,0 +1,89 @@
+﻿---
+layout: base.njk
+title: Blog - Local SEO Tips for Small Businesses
+description: Free local SEO tips, Google Business Profile guides, and digital marketing advice for small and family-owned businesses in Visalia CA. Available in English and Spanish.
+keywords: local SEO blog Visalia CA, Google Business Profile tips, small business digital marketing blog, bilingual marketing blog Central Valley
+permalink: /blog/
+---
+
+<section class="blog-hero" aria-labelledby="blog-heading">
+  <div class="container">
+    <p class="section-label" style="color: var(--aqua);">
+      <span class="lang-en">Free Education</span>
+      <span class="lang-es" hidden>Educación Gratuita</span>
+    </p>
+    <h1 id="blog-heading">
+      <span class="lang-en">Real tips for real business owners</span>
+      <span class="lang-es" hidden>Consejos reales para dueños de negocios reales</span>
+    </h1>
+    <p>
+      <span class="lang-en">No fluff. No jargon. Specific steps you can take today to get your business found in Visalia and beyond.</span>
+      <span class="lang-es" hidden>Sin relleno. Sin jerga. Pasos específicos que puedes tomar hoy para que tu negocio sea encontrado en Visalia y más allá.</span>
+    </p>
+  </div>
+</section>
+
+<section class="blog-listing" aria-labelledby="posts-heading">
+  <div class="container">
+    <h2 id="posts-heading" class="visually-hidden">All Blog Posts</h2>
+
+    {% if collections.posts.length > 0 %}
+    <div class="blog-listing-grid">
+      {% for post in collections.posts %}
+      <article class="blog-listing-card fade-in" itemscope itemtype="https://schema.org/BlogPosting">
+        <div class="blog-card-inner">
+          <time itemprop="datePublished" datetime="{{ post.date | htmlDateString }}">
+            {{ post.date | readableDate }}
+          </time>
+          <h2 itemprop="headline">
+            <a href="{{ post.url }}" itemprop="url">{{ post.data.title }}</a>
+          </h2>
+          <p itemprop="description">{{ post.data.description }}</p>
+          {% if post.data.tags %}
+          <div class="post-tags" aria-label="Categories">
+            {% for tag in post.data.tags %}
+              {% if tag != "posts" %}
+              <span class="tag">{{ tag }}</span>
+              {% endif %}
+            {% endfor %}
+          </div>
+          {% endif %}
+          <a href="{{ post.url }}" class="read-link" itemprop="url">
+            <span class="lang-en">Read Post →</span>
+            <span class="lang-es" hidden>Leer Artículo →</span>
+          </a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="text-center" style="padding: 3rem 0;">
+      <p style="font-size: 1.1rem; color: var(--gray);">
+        <span class="lang-en">Blog posts are coming soon. Check back shortly.</span>
+        <span class="lang-es" hidden>Los artículos del blog llegarán pronto. Vuelve pronto.</span>
+      </p>
+      <a href="/contact/" class="btn btn-outline mt-3">
+        <span class="lang-en">Get notified when we post</span>
+        <span class="lang-es" hidden>Recibe notificaciones cuando publiquemos</span>
+      </a>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<section class="cta-banner" aria-label="Free audit CTA">
+  <div class="container text-center">
+    <h2>
+      <span class="lang-en">Learn faster with a free profile check</span>
+      <span class="lang-es" hidden>Aprende más rápido con una revisión de perfil gratis</span>
+    </h2>
+    <p>
+      <span class="lang-en">Reading is great. Knowing exactly what's wrong with YOUR profile is better.</span>
+      <span class="lang-es" hidden>Leer es genial. Saber exactamente qué está mal con TU perfil es mejor.</span>
+    </p>
+    <a href="/book/" class="btn btn-primary btn-lg">
+      <span class="lang-en">Book Your Free Call</span>
+      <span class="lang-es" hidden>Reserva Tu Llamada Gratis</span>
+    </a>
+  </div>
+</section>
