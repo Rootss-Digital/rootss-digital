@@ -1,6 +1,41 @@
 ﻿---
 layout: base.njk
 ---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "@id": "https://rootssdigital.com{{ page.url }}#article",
+  "headline": "{{ title }}",
+  "description": "{{ description }}",
+  "url": "https://rootssdigital.com{{ page.url }}",
+  "datePublished": "{{ date | htmlDateString }}",
+  "dateModified": "{{ date | htmlDateString }}",
+  "inLanguage": "en",
+  "author": {
+    "@id": "https://rootssdigital.com/#sandra"
+  },
+  "publisher": {
+    "@id": "https://rootssdigital.com/#business"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://rootssdigital.com{{ page.url }}"
+  },
+  "isPartOf": {
+    "@id": "https://rootssdigital.com/#website"
+  },
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "xPath": [
+      "/html/head/title",
+      "/html/head/meta[@name='description']",
+      "//article//h1",
+      "//article//h2"
+    ]
+  }
+}
+</script>
 <article class="blog-post-page" itemscope itemtype="https://schema.org/BlogPosting">
   <meta itemprop="author" content="Sandra Pablo">
   <meta itemprop="publisher" content="Rootss Digital">
