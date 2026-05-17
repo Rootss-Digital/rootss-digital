@@ -57,9 +57,15 @@ layout: base.njk
         </div>
         {% endif %}
       </div>
-      <h1 itemprop="headline">{{ title }}</h1>
+      <h1 itemprop="headline">
+        <span class="lang-en">{{ title }}</span>
+        <span class="lang-es" hidden>{{ titleEs if titleEs else title }}</span>
+      </h1>
       {% if description %}
-      <p class="post-excerpt" itemprop="description">{{ description }}</p>
+      <p class="post-excerpt" itemprop="description">
+        <span class="lang-en">{{ description }}</span>
+        <span class="lang-es" hidden>{{ descriptionEs if descriptionEs else description }}</span>
+      </p>
       {% endif %}
     </div>
   </header>
