@@ -1,6 +1,8 @@
 ﻿---
 title: "Your Business Is on Google Maps - You Just Don't Know It Yet"
+titleEs: "Tu negocio ya está en Google Maps - Solo que aún no lo sabes"
 description: "Most small businesses in Visalia already have a Google Business Profile. The problem? Nobody claimed it. Here's what that means and exactly how to fix it today."
+descriptionEs: "La mayoría de los negocios pequeños en Visalia ya tienen un Perfil de Google Business. El problema es que nadie lo ha reclamado. Aquí te explicamos qué significa eso y cómo solucionarlo hoy."
 date: 2026-05-01
 tags:
   - posts

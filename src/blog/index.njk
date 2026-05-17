@@ -33,12 +33,19 @@ permalink: /blog/
       <article class="blog-listing-card fade-in" itemscope itemtype="https://schema.org/BlogPosting">
         <div class="blog-card-inner">
           <time itemprop="datePublished" datetime="{{ post.date | htmlDateString }}">
-            {{ post.date | readableDate }}
+            <span class="lang-en">{{ post.date | readableDate }}</span>
+            <span class="lang-es" hidden>{{ post.date | readableDateEs }}</span>
           </time>
           <h2 itemprop="headline">
-            <a href="{{ post.url }}" itemprop="url">{{ post.data.title }}</a>
+            <a href="{{ post.url }}" itemprop="url">
+              <span class="lang-en">{{ post.data.title }}</span>
+              <span class="lang-es" hidden>{{ post.data.titleEs if post.data.titleEs else post.data.title }}</span>
+            </a>
           </h2>
-          <p itemprop="description">{{ post.data.description }}</p>
+          <p itemprop="description">
+            <span class="lang-en">{{ post.data.description }}</span>
+            <span class="lang-es" hidden>{{ post.data.descriptionEs if post.data.descriptionEs else post.data.description }}</span>
+          </p>
           {% if post.data.tags %}
           <div class="post-tags" aria-label="Categories">
             {% for tag in post.data.tags %}
