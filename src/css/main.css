@@ -394,8 +394,8 @@ textarea { min-height: 140px; resize: vertical; }
    FOOTER
    ============================================================ */
 .site-footer {
-  background: var(--green);
-  color: var(--off-white);
+  background: var(--off-white);
+  color: var(--green);
   padding: 4rem 0 2rem;
 }
 .footer-grid {
@@ -407,7 +407,7 @@ textarea { min-height: 140px; resize: vertical; }
 .footer-brand img { margin-bottom: 1rem; }
 .footer-tagline {
   font-size: 0.9rem;
-  color: rgba(244,243,239,0.75);
+  color: rgba(1,66,59,0.7);
   line-height: 1.6;
   margin-bottom: 1.25rem;
 }
@@ -416,7 +416,7 @@ textarea { min-height: 140px; resize: vertical; }
   gap: 0.75rem;
 }
 .social-links a {
-  color: rgba(244,243,239,0.65);
+  color: rgba(1,66,59,0.6);
   text-decoration: none;
   transition: color var(--transition);
   display: flex;
@@ -429,25 +429,25 @@ textarea { min-height: 140px; resize: vertical; }
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--aqua);
+  color: var(--green);
   margin-bottom: 1rem;
 }
 .footer-nav ul { list-style: none; }
 .footer-nav ul li { margin-bottom: 0.5rem; }
 .footer-nav a,
 .footer-contact a {
-  color: rgba(244,243,239,0.8);
+  color: rgba(1,66,59,0.8);
   text-decoration: none;
   font-size: 0.9rem;
   transition: color var(--transition);
 }
 .footer-nav a:hover,
 .footer-contact a:hover { color: var(--aqua); }
-.footer-contact p { font-size: 0.9rem; color: rgba(244,243,239,0.8); margin-bottom: 0.5rem; }
-.footer-lang-note { font-size: 0.8rem; color: rgba(244,243,239,0.55); margin-top: 0.5rem; }
+.footer-contact p { font-size: 0.9rem; color: rgba(1,66,59,0.8); margin-bottom: 0.5rem; }
+.footer-lang-note { font-size: 0.8rem; color: rgba(1,66,59,0.55); margin-top: 0.5rem; }
 .footer-cta-box {
-  background: rgba(74,226,211,0.08);
-  border: 1px solid rgba(74,226,211,0.25);
+  background: rgba(1,66,59,0.06);
+  border: 1px solid rgba(1,66,59,0.2);
   border-radius: var(--radius);
   padding: 1.5rem;
   text-align: center;
@@ -455,16 +455,16 @@ textarea { min-height: 140px; resize: vertical; }
 .footer-cta-label {
   font-size: 0.95rem;
   font-weight: 600;
-  color: var(--off-white);
+  color: var(--green);
   margin-bottom: 1rem;
 }
 .footer-cta-sub {
   font-size: 0.8rem;
-  color: rgba(244,243,239,0.55);
+  color: rgba(1,66,59,0.55);
   margin-top: 0.6rem;
 }
 .footer-bottom {
-  border-top: 1px solid rgba(244,243,239,0.12);
+  border-top: 1px solid rgba(1,66,59,0.15);
   padding-top: 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -472,7 +472,7 @@ textarea { min-height: 140px; resize: vertical; }
   flex-wrap: wrap;
   gap: 0.5rem;
 }
-.footer-bottom p { font-size: 0.82rem; color: rgba(244,243,239,0.45); margin: 0; }
+.footer-bottom p { font-size: 0.82rem; color: rgba(1,66,59,0.5); margin: 0; }
 
 @media (max-width: 900px) {
   .footer-grid { grid-template-columns: 1fr 1fr; }
@@ -792,7 +792,7 @@ textarea { min-height: 140px; resize: vertical; }
 .post-cta-banner .cta-email-link { color: rgba(244,243,239,0.8); }
 .post-cta-banner .cta-email-link a { color: var(--aqua); font-weight: 600; }
 .footer-cta-box .cta-multi { margin-bottom: 0.75rem; }
-.footer-cta-box .cta-email-link { color: rgba(244,243,239,0.7); font-size: 0.9rem; }
+.footer-cta-box .cta-email-link { color: rgba(1,66,59,0.7); font-size: 0.9rem; }
 .footer-cta-box .cta-email-link a { color: var(--aqua); font-weight: 600; }
 
 /* ============================================================
