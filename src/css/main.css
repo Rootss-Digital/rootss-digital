@@ -41,7 +41,7 @@ ul[role="list"], ol[role="list"] { list-style: none; }
 html { font-size: 16px; scroll-behavior: smooth; }
 body {
   font-family: var(--font-body);
-  color: var(--dark);
+  color: var(--green);
   background: var(--off-white);
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
@@ -582,7 +582,7 @@ textarea { min-height: 140px; resize: vertical; }
 @media (max-width: 768px) { .problem-grid { grid-template-columns: 1fr; } }
 
 /* ── Services Section ── */
-.services-section { background: var(--white); }
+.services-section { background: var(--off-white); }
 .services-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -712,7 +712,7 @@ textarea { min-height: 140px; resize: vertical; }
 @media (max-width: 640px) { .testimonials-grid { grid-template-columns: 1fr; } }
 
 /* ── Blog Preview ── */
-.blog-preview-section { background: var(--white); }
+.blog-preview-section { background: var(--off-white); }
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -802,7 +802,7 @@ textarea { min-height: 140px; resize: vertical; }
 .about-hero p { color: rgba(244,243,239,0.82); line-height: 1.75; }
 
 .story-section { background: var(--off-white); }
-.story-section p { max-width: 720px; font-size: 1.05rem; line-height: 1.8; color: #2a2a2a; }
+.story-section p { max-width: 720px; font-size: 1.05rem; line-height: 1.8; color: var(--green); }
 .story-section p + p { margin-top: 1rem; }
 
 .values-grid {
