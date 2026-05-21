@@ -929,6 +929,12 @@ textarea { min-height: 140px; resize: vertical; }
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   align-items: start;
+  justify-items: center;
+}
+.pricing-grid .pricing-card:only-child {
+  max-width: 460px;
+  width: 100%;
+  grid-column: 1 / -1;
 }
 @media (max-width: 900px) {
   .pricing-grid {
