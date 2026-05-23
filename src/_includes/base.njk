@@ -400,5 +400,46 @@
   {% include "footer.njk" %}
 
   <script src="/js/main.js"></script>
+
+  <!-- Reviews Widget Script -->
+  <script>
+    (function() {
+      function getPageSizeForWidth(width) {
+        if (width < 450) return 1;
+        if (width < 675) return 2;
+        if (width < 918) return 3;
+        if (width < 1144) return 4;
+        return 5;
+      }
+      function setIframeSrc() {
+        const iframe = document.getElementById("reviewsWidget");
+        const container = document.getElementById("reviewsWidgetContainer");
+        if (!iframe || !container) {
+          setTimeout(setIframeSrc, 50);
+          return;
+        }
+        const width = container.offsetWidth;
+        if (width === 0) {
+          setTimeout(setIframeSrc, 50);
+          return;
+        }
+        const pageSize = getPageSizeForWidth(width);
+        const expectedSrc = "https://www.localmarketingmanager.com/api/reviews/rootss-digital-review-widget?pageSize=" + pageSize;
+        if (iframe.src !== expectedSrc) {
+          iframe.src = expectedSrc;
+        }
+      }
+      function init() {
+        setIframeSrc();
+        setTimeout(setIframeSrc, 50);
+        window.addEventListener("resize", setIframeSrc);
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
 </body>
 </html>
