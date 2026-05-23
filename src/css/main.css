@@ -518,10 +518,22 @@ textarea { min-height: 140px; resize: vertical; }
   margin-bottom: 1rem;
 }
 .hero h1 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: rgba(244,243,239,0.7);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.hero-tagline {
+  font-family: var(--font-head);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.15;
   color: var(--off-white);
   margin-bottom: 1.25rem;
 }
-.hero h1 .highlight { color: var(--aqua); }
+.hero-tagline .highlight { color: var(--aqua); }
 .hero-sub {
   font-size: 1.1rem;
   color: rgba(244,243,239,0.8);
