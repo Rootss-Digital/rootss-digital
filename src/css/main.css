@@ -507,7 +507,7 @@ textarea { min-height: 140px; resize: vertical; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
-  align-items: center;
+  align-items: start;
 }
 .hero-eyebrow {
   font-size: 0.82rem;
@@ -561,9 +561,10 @@ textarea { min-height: 140px; resize: vertical; }
 .hero-image img {
   width: 100%;
   max-width: 420px;
+  height: auto;
   border-radius: var(--radius);
   box-shadow: var(--shadow-lg);
-  object-fit: cover;
+  display: block;
 }
 .hero-image-badge {
   position: absolute;
