@@ -633,6 +633,59 @@ textarea { min-height: 140px; resize: vertical; }
   .hero-image-badge { left: 0; }
 }
 
+/* ── Credentials Strip ── */
+.credentials-strip {
+  background: var(--off-white);
+  border-top: 1px solid rgba(1,66,59,0.1);
+  border-bottom: 1px solid rgba(1,66,59,0.1);
+  padding: 1.25rem 0;
+}
+.credentials-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: rgba(1,66,59,0.45);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.credentials-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem 2rem;
+}
+.credential-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--green);
+  white-space: nowrap;
+}
+.credential-icon { font-size: 1rem; flex-shrink: 0; }
+.credential-link {
+  color: var(--green);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(1,66,59,0.3);
+  transition: color var(--transition), border-color var(--transition);
+}
+.credential-link:hover {
+  color: var(--aqua);
+  border-color: var(--aqua);
+}
+@media (max-width: 600px) {
+  .credentials-items {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+  .credential-item { white-space: normal; }
+}
+
 /* ── Problem Section ── */
 .problem-section { background: var(--off-white); }
 .problem-grid {
