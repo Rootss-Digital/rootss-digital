@@ -1136,10 +1136,15 @@ textarea { min-height: 140px; resize: vertical; }
   font-size: 0.95rem;
   color: var(--gray);
   line-height: 1.7;
-  margin-top: 0.75rem;
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, margin 0.35s ease;
+  margin-top: 0;
 }
-.faq-item.open .faq-answer { display: block; }
+.faq-item.open .faq-answer {
+  max-height: 2000px;
+  margin-top: 0.75rem;
+}
 .faq-chevron { transition: transform var(--transition); flex-shrink: 0; }
 .faq-item.open .faq-chevron { transform: rotate(180deg); }
 

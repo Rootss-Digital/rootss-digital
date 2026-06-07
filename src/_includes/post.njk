@@ -10,7 +10,7 @@ layout: base.njk
   "description": "{{ description }}",
   "url": "https://rootssdigital.com{{ page.url }}",
   "datePublished": "{{ date | htmlDateString }}",
-  "dateModified": "{{ date | htmlDateString }}",
+  "dateModified": "{{ updated | htmlDateString if updated else date | htmlDateString }}",
   "inLanguage": "en",
   "author": {
     "@id": "https://rootssdigital.com/#sandra"

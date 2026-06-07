@@ -338,18 +338,20 @@
         }
       },
       {
-        "@type": "BreadcrumbList",
-        "@id": "https://rootssdigital.com/#breadcrumbs",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://rootssdigital.com/"},
-          {"@type": "ListItem", "position": 2, "name": "About Sandra", "item": "https://rootssdigital.com/about/"},
-          {"@type": "ListItem", "position": 3, "name": "Services", "item": "https://rootssdigital.com/services/"},
-          {"@type": "ListItem", "position": 4, "name": "Free Resources", "item": "https://rootssdigital.com/products/"},
-          {"@type": "ListItem", "position": 5, "name": "Blog", "item": "https://rootssdigital.com/blog/"},
-          {"@type": "ListItem", "position": 6, "name": "FAQ", "item": "https://rootssdigital.com/faq/"},
-          {"@type": "ListItem", "position": 7, "name": "Book a Call", "item": "https://rootssdigital.com/book/"},
-          {"@type": "ListItem", "position": 8, "name": "Contact", "item": "https://rootssdigital.com/contact/"}
-        ]
+        "@type": "WebPage",
+        "@id": "https://rootssdigital.com{{ page.url }}#webpage",
+        "url": "https://rootssdigital.com{{ page.url }}",
+        "name": "{{ title }}",
+        "description": "{{ description | default('Rootss Digital – Local SEO and bilingual digital marketing for small businesses in Visalia, CA.') }}",
+        "isPartOf": {"@id": "https://rootssdigital.com/#website"},
+        "about": {"@id": "https://rootssdigital.com/#business"},
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://rootssdigital.com/"},
+            {"@type": "ListItem", "position": 2, "name": "{{ title }}", "item": "https://rootssdigital.com{{ page.url }}"}
+          ]
+        }
       }
     ]
   }
