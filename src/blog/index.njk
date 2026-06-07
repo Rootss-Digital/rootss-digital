@@ -9,16 +9,16 @@ permalink: /blog/
 <section class="blog-hero" aria-labelledby="blog-heading">
   <div class="container">
     <p class="section-label" style="color: var(--aqua);">
-      <span class="lang-en">Free Education</span>
-      <span class="lang-es" hidden>Educación Gratuita</span>
+      <span class="lang-en" lang="en">Free Education</span>
+      <span class="lang-es" lang="es">Educación Gratuita</span>
     </p>
     <h1 id="blog-heading">
-      <span class="lang-en">Real tips for real business owners</span>
-      <span class="lang-es" hidden>Consejos reales para dueños de negocios reales</span>
+      <span class="lang-en" lang="en">Real tips for real business owners</span>
+      <span class="lang-es" lang="es">Consejos reales para dueños de negocios reales</span>
     </h1>
     <p>
-      <span class="lang-en">No fluff. No jargon. Specific steps you can take today to get your business found in Visalia and beyond.</span>
-      <span class="lang-es" hidden>Sin relleno. Sin jerga. Pasos específicos que puedes tomar hoy para que tu negocio sea encontrado en Visalia y más allá.</span>
+      <span class="lang-en" lang="en">No fluff. No jargon. Specific steps you can take today to get your business found in Visalia and beyond.</span>
+      <span class="lang-es" lang="es">Sin relleno. Sin jerga. Pasos específicos que puedes tomar hoy para que tu negocio sea encontrado en Visalia y más allá.</span>
     </p>
   </div>
 </section>
@@ -33,18 +33,18 @@ permalink: /blog/
       <article class="blog-listing-card fade-in" itemscope itemtype="https://schema.org/BlogPosting">
         <div class="blog-card-inner">
           <time itemprop="datePublished" datetime="{{ post.date | htmlDateString }}">
-            <span class="lang-en">{{ post.date | readableDate }}</span>
-            <span class="lang-es" hidden>{{ post.date | readableDateEs }}</span>
+            <span class="lang-en" lang="en">{{ post.date | readableDate }}</span>
+            <span class="lang-es" lang="es">{{ post.date | readableDateEs }}</span>
           </time>
           <h2 itemprop="headline">
             <a href="{{ post.url }}" itemprop="url">
-              <span class="lang-en">{{ post.data.title }}</span>
-              <span class="lang-es" hidden>{{ post.data.titleEs if post.data.titleEs else post.data.title }}</span>
+              <span class="lang-en" lang="en">{{ post.data.title }}</span>
+              <span class="lang-es" lang="es">{{ post.data.titleEs if post.data.titleEs else post.data.title }}</span>
             </a>
           </h2>
           <p itemprop="description">
-            <span class="lang-en">{{ post.data.description }}</span>
-            <span class="lang-es" hidden>{{ post.data.descriptionEs if post.data.descriptionEs else post.data.description }}</span>
+            <span class="lang-en" lang="en">{{ post.data.description }}</span>
+            <span class="lang-es" lang="es">{{ post.data.descriptionEs if post.data.descriptionEs else post.data.description }}</span>
           </p>
           {% if post.data.tags %}
           <div class="post-tags" aria-label="Categories">
@@ -56,8 +56,8 @@ permalink: /blog/
           </div>
           {% endif %}
           <a href="{{ post.url }}" class="read-link" itemprop="url">
-            <span class="lang-en">Read Post →</span>
-            <span class="lang-es" hidden>Leer Artículo →</span>
+            <span class="lang-en" lang="en">Read Post →</span>
+            <span class="lang-es" lang="es">Leer Artículo →</span>
           </a>
         </div>
       </article>
@@ -66,12 +66,12 @@ permalink: /blog/
     {% else %}
     <div class="text-center" style="padding: 3rem 0;">
       <p style="font-size: 1.1rem; color: var(--gray);">
-        <span class="lang-en">Blog posts are coming soon. Check back shortly.</span>
-        <span class="lang-es" hidden>Los artículos del blog llegarán pronto. Vuelve pronto.</span>
+        <span class="lang-en" lang="en">Blog posts are coming soon. Check back shortly.</span>
+        <span class="lang-es" lang="es">Los artículos del blog llegarán pronto. Vuelve pronto.</span>
       </p>
       <a href="/contact/" class="btn btn-outline mt-3">
-        <span class="lang-en">Get notified when we post</span>
-        <span class="lang-es" hidden>Recibe notificaciones cuando publiquemos</span>
+        <span class="lang-en" lang="en">Get notified when we post</span>
+        <span class="lang-es" lang="es">Recibe notificaciones cuando publiquemos</span>
       </a>
     </div>
     {% endif %}
@@ -81,16 +81,16 @@ permalink: /blog/
 <section class="cta-banner" aria-label="Free audit CTA">
   <div class="container text-center">
     <h2>
-      <span class="lang-en">Learn faster with a free profile check</span>
-      <span class="lang-es" hidden>Aprende más rápido con una revisión de perfil gratis</span>
+      <span class="lang-en" lang="en">Learn faster with a free profile check</span>
+      <span class="lang-es" lang="es">Aprende más rápido con una revisión de perfil gratis</span>
     </h2>
     <p>
-      <span class="lang-en">Reading is great. Knowing exactly what's wrong with YOUR profile is better.</span>
-      <span class="lang-es" hidden>Leer es genial. Saber exactamente qué está mal con TU perfil es mejor.</span>
+      <span class="lang-en" lang="en">Reading is great. Knowing exactly what's wrong with YOUR profile is better.</span>
+      <span class="lang-es" lang="es">Leer es genial. Saber exactamente qué está mal con TU perfil es mejor.</span>
     </p>
     <a href="/book/" class="btn btn-primary btn-lg">
-      <span class="lang-en">Book Your Free Call</span>
-      <span class="lang-es" hidden>Reserva Tu Llamada Gratis</span>
+      <span class="lang-en" lang="en">Book Your Free Call</span>
+      <span class="lang-es" lang="es">Reserva Tu Llamada Gratis</span>
     </a>
   </div>
 </section>

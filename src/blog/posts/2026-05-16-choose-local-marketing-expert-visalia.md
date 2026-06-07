@@ -12,7 +12,7 @@ layout: post.njk
 keywords: local marketing expert Visalia CA, best SEO consultant Central Valley, bilingual marketing Visalia, choose local SEO strategist Visalia
 ---
 
-<span class="lang-en">
+<span class="lang-en" lang="en">
 
 Every small business needs more customers. In a town like Visalia, finding the right help can be hard. Many agencies promise big results but do not understand our community.
 
@@ -44,7 +44,7 @@ Want to see how your business looks online? Book a free 15-minute call with Root
 
 </span>
 
-<span class="lang-es" hidden>
+<span class="lang-es" lang="es">
 
 Todos los negocios pequeños necesitan más clientes. En una ciudad como Visalia, encontrar la ayuda correcta puede ser difícil. Muchas agencias prometen grandes resultados pero no conocen a nuestra comunidad.
 

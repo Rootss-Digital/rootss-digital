@@ -13,7 +13,7 @@ layout: post.njk
 keywords: Google Maps Visalia CA, grow business Google Maps, local SEO Visalia small business, Google Business Profile Visalia, get more customers Visalia CA
 ---
 
-<span class="lang-en">
+<span class="lang-en" lang="en">
 
 Do you want more people to buy from your shop in Visalia? When people look for a place to eat or buy things, they use their phones. They search for things "near me."
 
@@ -71,7 +71,7 @@ Go to your computer today. Check your Google map page, fix your address, and ask
 
 </span>
 
-<span class="lang-es" hidden>
+<span class="lang-es" lang="es">
 
 ¿Quieres que más personas compren en tu negocio en Visalia? Cuando la gente busca un lugar para comer o comprar cosas, usa su teléfono. Buscan cosas "cerca de mí."
 

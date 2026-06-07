@@ -9,6 +9,14 @@
 img, video { max-width: 100%; display: block; }
 ul[role="list"], ol[role="list"] { list-style: none; }
 
+/* ── Bilingual Language Visibility ──
+   Spanish content is visually hidden by default via CSS (not the hidden
+   attribute) so both EN and ES text remain in the DOM for AI/bot parsing.
+   JS adds .lang-es-active to <body> when user switches to Spanish. ── */
+.lang-es { display: none; }
+body.lang-es-active .lang-es { display: revert; }
+body.lang-es-active .lang-en { display: none; }
+
 /* ── Variables ── */
 :root {
   --green:      #01423B;

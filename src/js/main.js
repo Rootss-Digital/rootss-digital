@@ -18,12 +18,8 @@
     document.documentElement.lang = lang;
     localStorage.setItem(LANG_KEY, lang);
 
-    document.querySelectorAll('.lang-en').forEach(el => {
-      el.hidden = (lang === 'es');
-    });
-    document.querySelectorAll('.lang-es').forEach(el => {
-      el.hidden = (lang === 'en');
-    });
+    // Toggle body class — CSS handles visibility, content stays in DOM for bots
+    document.body.classList.toggle('lang-es-active', lang === 'es');
 
     document.querySelectorAll('[data-en][data-es]').forEach(el => {
       el.textContent = lang === 'es' ? el.dataset.es : el.dataset.en;
