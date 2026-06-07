@@ -74,6 +74,32 @@ layout: base.njk
     {{ content | safe }}
   </div>
 
+  <aside class="post-author-bio" itemscope itemtype="https://schema.org/Person">
+    <div class="container container-narrow">
+      <div class="author-bio-inner">
+        <img src="/images/sandra-headshot.jpg"
+             alt="Sandra Pablo, founder of Rootss Digital, Local SEO strategist in Visalia CA"
+             width="72" height="72"
+             itemprop="image"
+             loading="lazy">
+        <div class="author-bio-text">
+          <p class="author-bio-name" itemprop="name">
+            <span class="lang-en">Written by <a href="/about/" itemprop="url">Sandra Pablo</a></span>
+            <span class="lang-es" hidden>Escrito por <a href="/about/" itemprop="url">Sandra Pablo</a></span>
+          </p>
+          <p class="author-bio-role" itemprop="jobTitle">
+            <span class="lang-en">Founder of Rootss Digital · Local SEO Strategist · Visalia, CA</span>
+            <span class="lang-es" hidden>Fundadora de Rootss Digital · Estratega de SEO Local · Visalia, CA</span>
+          </p>
+          <p class="author-bio-desc">
+            <span class="lang-en">Sandra helps small and family-owned businesses in the Central Valley get found on Google Maps and AI search. Bilingual services in English and Spanish.</span>
+            <span class="lang-es" hidden>Sandra ayuda a pequeños negocios familiares en el Valle Central a ser encontrados en Google Maps y búsquedas de IA. Servicios bilingües en inglés y español.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </aside>
+
   <aside class="post-cta-banner">
     <div class="container container-narrow">
       <p class="lang-en">Is your business showing up on Google? Let's find out together - free.</p>

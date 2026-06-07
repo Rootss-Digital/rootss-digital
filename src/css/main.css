@@ -534,6 +534,25 @@ textarea { min-height: 140px; resize: vertical; }
   margin-bottom: 1.25rem;
 }
 .hero-tagline .highlight { color: var(--aqua); }
+.hero-entity-statement {
+  font-size: 0.88rem;
+  color: rgba(244,243,239,0.6);
+  max-width: 520px;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+  font-style: italic;
+}
+.about-entity-statement {
+  font-size: 0.95rem;
+  color: var(--green);
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid var(--aqua);
+  background: rgba(74,226,211,0.06);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
 .hero-sub {
   font-size: 1.1rem;
   color: rgba(244,243,239,0.8);
@@ -1269,6 +1288,48 @@ textarea { min-height: 140px; resize: vertical; }
   font-size: 1.1rem;
   font-style: italic;
   color: var(--green);
+}
+.post-author-bio {
+  background: var(--off-white);
+  border-top: 1px solid rgba(1,66,59,0.12);
+  border-bottom: 1px solid rgba(1,66,59,0.12);
+  padding: 2rem 0;
+}
+.author-bio-inner {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.author-bio-inner img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.author-bio-name {
+  font-weight: 700;
+  color: var(--green);
+  margin-bottom: 0.15rem;
+  font-size: 0.95rem;
+}
+.author-bio-name a { color: var(--green); text-decoration: underline; }
+.author-bio-role {
+  font-size: 0.8rem;
+  color: var(--aqua);
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.author-bio-desc {
+  font-size: 0.88rem;
+  color: rgba(1,66,59,0.7);
+  line-height: 1.6;
+  margin: 0;
+}
+@media (max-width: 560px) {
+  .author-bio-inner { flex-direction: column; text-align: center; }
 }
 .post-cta-banner {
   background: var(--green);
