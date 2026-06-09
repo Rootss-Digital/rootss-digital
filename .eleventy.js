@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/sitemap.xml": "sitemap.xml" });
   eleventyConfig.addPassthroughCopy({ "src/llms.txt": "llms.txt" });
   eleventyConfig.addPassthroughCopy({ "src/54762cedb5a646d5aa130b4e3b01a522.txt": "54762cedb5a646d5aa130b4e3b01a522.txt" });
+  eleventyConfig.addPassthroughCopy({ "src/a7c3e9b2d4f08516e3a9b2c4f1d08e57.txt": "a7c3e9b2d4f08516e3a9b2c4f1d08e57.txt" });
 
   eleventyConfig.addCollection("posts", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/blog/posts/*.md").reverse();
